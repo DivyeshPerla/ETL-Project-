@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Cleaned_WHO_Causes_of_Death' inline='true' name='federated.1q7qvsx0lfaeal12rbmdm0yw6ks6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Cleaned_WHO_Causes_of_Death' name='textscan.1bnjh4c047ei7j119mba30vlaeua'>
+            <connection class='textscan' directory='D:/Divyesh' filename='Cleaned_WHO_Causes_of_Death.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1bnjh4c047ei7j119mba30vlaeua' name='Cleaned_WHO_Causes_of_Death.csv' table='[Cleaned_WHO_Causes_of_Death#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country_Name' ordinal='1' />
+            <column datatype='integer' name='Record_Count' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Cleaned_WHO_Causes_of_Death.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[Cleaned_WHO_Causes_of_Death.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned_WHO_Causes_of_Death.csv_DA8B873FA2D34D29AD87EE503B4C358C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country_Name]</local-name>
+            <parent-name>[Cleaned_WHO_Causes_of_Death.csv]</parent-name>
+            <remote-alias>Country_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Cleaned_WHO_Causes_of_Death.csv_DA8B873FA2D34D29AD87EE503B4C358C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Record_Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Record_Count]</local-name>
+            <parent-name>[Cleaned_WHO_Causes_of_Death.csv]</parent-name>
+            <remote-alias>Record_Count</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Cleaned_WHO_Causes_of_Death.csv_DA8B873FA2D34D29AD87EE503B4C358C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Country Name' datatype='string' name='[Country_Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Record Count' datatype='integer' name='[Record_Count]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='Cleaned_WHO_Causes_of_Death.csv' datatype='table' name='[__tableau_internal_object_id__].[Cleaned_WHO_Causes_of_Death.csv_DA8B873FA2D34D29AD87EE503B4C358C]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Cleaned_WHO_Causes_of_Death.csv' id='Cleaned_WHO_Causes_of_Death.csv_DA8B873FA2D34D29AD87EE503B4C358C'>
+            <properties context=''>
+              <relation connection='textscan.1bnjh4c047ei7j119mba30vlaeua' name='Cleaned_WHO_Causes_of_Death.csv' table='[Cleaned_WHO_Causes_of_Death#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country_Name' ordinal='1' />
+                  <column datatype='integer' name='Record_Count' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Cleaned_WHO_Causes_of_Death' name='federated.1q7qvsx0lfaeal12rbmdm0yw6ks6' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1q7qvsx0lfaeal12rbmdm0yw6ks6'>
+            <column caption='Record Count' datatype='integer' name='[Record_Count]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Record_Count]' derivation='Sum' name='[sum:Record_Count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#f28e2b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1q7qvsx0lfaeal12rbmdm0yw6ks6].[sum:Record_Count:qk]</rows>
+        <cols>[federated.1q7qvsx0lfaeal12rbmdm0yw6ks6].[none:Year:ok]</cols>
+      </table>
+      <simple-id uuid='{677BEDCD-8E48-4302-844F-F05D56E1BE19}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1q7qvsx0lfaeal12rbmdm0yw6ks6].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{3748DDFD-3FCE-4875-8A80-FB68B20E731F}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='142'>
+      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
+      ifwfzZlM/wq61xAAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
